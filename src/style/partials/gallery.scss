@@ -114,6 +114,8 @@
     @include square(272px);
     padding-top: 20px;
     position: relative;
+    background-position: center center;
+    background-size: cover;
     @include respond-to(desktop) {
         @include square(232px);
     }

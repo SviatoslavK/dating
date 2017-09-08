@@ -1,0 +1,289 @@
+.filters {
+    width: 100%;
+    height: 257px;
+    position: relative;
+    & .container {
+        height: 100%;
+    }
+    @include respond-to(tablet) {
+        height: 230px;
+    }
+    @include respond-to(mobile) {
+        height: 297px;
+    }
+    @include respond-to(small) {
+        height: 396px;
+    }
+}
+.filters__title {
+    padding-top: 33px;
+    text-align: center;
+    color: #333333;
+    font-size: 30px;
+    margin-bottom: 37px;
+    @include respond-to(tablet) {
+        font-size: 24px;
+        padding-top: 23px;
+    }
+    @include respond-to(mobile) {
+        font-size: 24px;
+        padding-top: 23px;
+    }
+    @include respond-to(small) {
+        font-size: 24px;
+        padding-top: 23px;
+    }
+}
+.filter__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: #333333;
+    @include respond-to(tablet) {
+        font-size: 14px;
+    }
+    @include respond-to(mobile) {
+        flex-direction: column;
+        font-size: 14px;
+    }
+    @include respond-to(small) {
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
+.group__filter {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    @include respond-to(mobile) {
+        width: 100%;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    @include respond-to(small) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+#filters__select {
+    min-width: 173px;
+    width: 173px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 30px;
+    border-bottom: 1px solid #DCDCDC;
+    border-radius: 0;
+    background: url('../img/arrow-down.png') 95%/10px no-repeat #fff;
+    @include respond-to(tablet) {
+        min-width: 113px;
+        width: 113px;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 25px;
+        background: url('../img/arrow-down.png') 100%/10px no-repeat #fff;
+    }
+}
+#filters__text {
+    min-width: 273px;
+    width: 273px;
+    height: 30px;
+    border-bottom: 1px solid #DCDCDC;
+    padding-right: 20px;
+    @include respond-to(tablet) {
+        min-width: 213px;
+        width: 213px;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+.filters__text--block {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond-to(small) {
+        width: 100%;
+    }
+}
+.input__clear {
+    @include square(12px);
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    @include background-img('../img/del-icon.svg');
+    &:hover {
+        cursor: pointer;
+    }
+    @include respond-to(small) {
+        margin-top: -16px;
+    }
+}
+.filters__range {
+    display: flex;
+    width: 260px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond-to(tablet) {
+        width: 220px;
+    }
+    @include respond-to(mobile) {
+        margin: 0;
+    }
+    @include respond-to(small) {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+}
+#filters__range {
+    margin-left: 15px;
+}
+.filters__btn {
+    min-width: 173px;
+    width: 173px;
+    height: 53px;
+    background: linear-gradient(45deg, #4E92FF, #376CF8);
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    line-height: 53px;
+    text-align: center;
+    &:hover {
+        box-shadow: (0px 2px 3px 1px rgba(0, 0, 0, .25));
+    }
+    @include respond-to(tablet) {
+        min-width: 133px;
+        width: 133px;
+        height: 43px;
+        line-height: 43px;
+    }
+    @include respond-to(mobile) {
+        height: 40px;
+        line-height: 40px;
+    }
+    @include respond-to(small) {
+        height: 40px;
+        width: 100%;
+        line-height: 40px;
+    }
+}
+.filters__extended {
+    margin-top: 56px;
+    width: 227px;
+    position: relative;
+    background-color: #fff;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.extended__arrow {
+    width: 10px;
+    height: 6px;
+    @include background-img('../img/arrow-down.png');
+    &:hover {
+        cursor: pointer;
+    }
+}
+.extended__line {
+    width: 100%;
+    height: 1px;
+    background-color: #DCDCDC;
+    position: absolute;
+    bottom: 38px;
+}
+
+
+
+section.range-slider {
+    position: relative;
+    width: 182px;
+    //   height: 30px;
+    float: left;
+}
+section.range-slider input[type="range"] {
+    pointer-events: none;
+    position: absolute;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: none;
+    background: #F1EFEF;
+    left: 20px;
+    top: 3px;
+    width: 182px;
+    height: 1px;
+    @include respond-to(tablet) {
+        width: 142px;
+    }
+    @include respond-to(small) {
+        width: 232px;
+    }
+}
+section.range-slider input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #366CF7;
+    border-radius: 50%;  
+}
+
+section.range-slider input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    height: 15px;
+    background-color: #366CF7;
+    border-radius: 50%;
+}
+section.range-slider input[type="range"]::-ms-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -ms-appearance: none;
+    height: 15px;
+    background-color: #366CF7;
+    border-radius: 50%;
+}
+section.range-slider input[type=range]::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: black;
+    border: 0;
+}
+section.range-slider input[type=range]:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+section.range-slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+output {
+    position: absolute;
+    top: 15px;
+}
+.first-range {
+    left: 30px;
+}
+.second-range {
+    left: 20px;
+}

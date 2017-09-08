@@ -1,0 +1,179 @@
+
+header {
+    width: 100%;
+    height: 80px;
+    & .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        @include respond-to(mobile) {
+            flex-wrap: wrap;
+        }
+        @include respond-to(small) {
+            flex-wrap: wrap;
+        }
+    }
+    @include respond-to(mobile) {
+        height: 120px;
+        padding-top: 10px;
+    }
+    @include respond-to(small) {
+        height: 120px;
+        padding-top: 10px;
+    }
+}
+.header__logo {
+    height: 26px;
+    width: 170px;
+    @include background-img('../img/logo.svg');
+    margin-right: 30px;
+    @include respond-to(tablet) {
+        height: 18px;
+        min-width: 120px;
+        width: 120px;
+    }
+    @include respond-to(mobile) {
+        height: 18px;
+        min-width: 120px;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    @include respond-to(small) {
+        height: 15px;
+        min-width: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+nav {
+    @include respond-to(mobile) {
+        // display: none;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include respond-to(small) {
+        // display: none;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+.header__navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar__item {
+    margin-right: 30px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    @include respond-to(tablet) {
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    @include respond-to(mobile) {
+        margin-right: 25px;
+        font-size: 14px;
+    }
+    @include respond-to(small) {
+        margin-right: 7px;
+        font-size: 12px;
+    }
+}
+.header__info {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @include respond-to(mobile) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include respond-to(small) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.header__status {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-right: 19px;
+    @include respond-to(tablet) {
+        margin-right: 10px;
+    }
+}
+.header__status--text {
+    font-size: 14px;
+    @include respond-to(tablet) {
+        font-size: 11px;
+    }
+    @include respond-to(mobile) {
+        font-size: 11px;
+    }
+    @include respond-to(small) {
+        font-size: 11px;
+    }
+}
+.header__status--icon {
+    @include square(14px);
+    @include background-img('../img/info-icon.svg');
+    margin-left: 8px;
+    align-self: flex-start;
+    margin-top: 6px;
+    &:hover {
+        cursor:pointer;
+    }
+    @include respond-to(tablet) {
+        @include square(12px);
+        margin-left: 5px;
+    }
+    @include respond-to(mobile) {
+        @include square(12px);
+        margin-left: 5px;
+    }
+    @include respond-to(small) {
+        @include square(12px);
+        margin-left: 5px;
+    }
+}
+.header__balance {
+    font-weight: 500;
+    font-size: 14px;
+    color: #366CF7;
+    @include respond-to(tablet) {
+        font-size: 11px;
+    }
+    @include respond-to(mobile) {
+        font-size: 11px;
+    }
+    @include respond-to(small) {
+        font-size: 11px;
+    }
+}
+.header__avatar {
+    margin-left: 18px;
+    margin-right: 14px;
+    @include square(43px);
+    @include background-img('../img/avatar.png');
+    @include respond-to(tablet) {
+        @include square(33px);
+    }
+    @include respond-to(mobile) {
+        @include square(33px);
+    }
+    @include respond-to(small) {
+        @include square(33px);
+    }
+}
+.header__arrow {
+    width: 10px;
+    height: 6px;
+    @include background-img('../img/arrow-down.png');
+    &:hover {
+        cursor: pointer;
+    }
+}

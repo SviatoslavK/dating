@@ -8,7 +8,7 @@ let personsData = [
         registrationDate: '2017-09-03',
         city: 'Санкт-Петербург',
         country: 'Россия',
-        img: '../img/lg-photo1.png'
+        img: 'img/lg-photo1.png'
     },
     {
         name: 'Диана',
@@ -19,7 +19,7 @@ let personsData = [
         registrationDate: '2017-09-07',
         city: 'Самара',
         country: 'Россия',
-        img: '../img/lg-photo2.png'
+        img: 'img/lg-photo2.png'
     },
     {
         name: 'Аня',
@@ -30,7 +30,7 @@ let personsData = [
         registrationDate: '2017-09-02',
         city: 'Ростов-на-Дону',
         country: 'Россия',
-        img: '../img/lg-photo3.png'
+        img: 'img/lg-photo3.png'
     },
     {
         name: 'Анжелика',
@@ -41,7 +41,7 @@ let personsData = [
         registrationDate: '2015-03-04',
         city: ' Чебоксары',
         country: 'Россия',
-        img: '../img/lg-photo4.png'
+        img: 'img/lg-photo4.png'
     },
     {
         name: 'Лариса',
@@ -52,7 +52,7 @@ let personsData = [
         registrationDate: '2015-03-05',
         city: 'Москва',
         country: 'Россия',
-        img: '../img/lg-photo5.png'
+        img: 'img/lg-photo5.png'
     },
     {
         name: 'Настя',
@@ -63,7 +63,7 @@ let personsData = [
         registrationDate: '2015-03-06',
         city: 'Зеленоград',
         country: 'Россия',
-        img: '../img/lg-photo6.png'
+        img: 'img/lg-photo6.png'
     },
     {
         name: 'Евгения',
@@ -74,7 +74,7 @@ let personsData = [
         registrationDate: '2015-03-07',
         city: 'Ростов-на-Дону',
         country: 'Россия',
-        img: '../img/lg-photo7.png'
+        img: 'img/lg-photo7.png'
     },
     {
         name: 'Ольга',
@@ -85,7 +85,7 @@ let personsData = [
         registrationDate: '2015-03-08',
         city: 'Казань',
         country: 'Россия',
-        img: '../img/lg-photo8.png'
+        img: 'img/lg-photo8.png'
     },
     {
         name: 'Кристиночка',
@@ -96,7 +96,7 @@ let personsData = [
         registrationDate: '2015-03-09',
         city: 'Санкт-Петербург',
         country: 'Россия',
-        img: '../img/lg-photo2.png'
+        img: 'img/lg-photo2.png'
     },
     {
         name: 'Ангелина',
@@ -107,7 +107,7 @@ let personsData = [
         registrationDate: '2015-03-09',
         city: 'Воронеж',
         country: 'Россия',
-        img: '../img/lg-photo7.png'
+        img: 'img/lg-photo7.png'
     },
     
 ];

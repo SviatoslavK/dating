@@ -36,22 +36,21 @@ const cardsHTML = data => {
     return fragment;
 }
 
-const appendCards = data => {
+const appendCards = (data, perPage) => {
     let markup = cardsHTML(data)
     let galeryContiner = document.querySelector('.gallery__block');
     galeryContiner.innerHTML = ''
     galeryContiner.appendChild(markup)
+    customPaginate(perPage)
 }
 const filterGirls = status => {
     if (status === 'new') {
         let week = 604800000;
         let lastWeek = Date.parse(new Date) - week
         let lastRegistrated = personsData.filter(item => Date.parse(item.registrationDate) > lastWeek)
-        appendCards(lastRegistrated)
-        customPaginate(8)
+        appendCards(lastRegistrated, 8)
     } else {
-        appendCards(personsData.filter(item => item[status]))
-        customPaginate(8)
+        appendCards(personsData.filter(item => item[status]), 8)
     }
 }
 
@@ -65,12 +64,12 @@ const search = () => {
 
     let searchGirls = personsData.filter(item => {
         return item.age >= fromAge && item.age <= tillAge && item.city.toLowerCase().includes(city)
+        // return item.age >= fromAge && item.age <= tillAge && item.city.toLowerCase() === city
     })
-    appendCards(searchGirls)
-    customPaginate(8)
+    appendCards(searchGirls, 8)
 
 }
-appendCards(personsData)
+appendCards(personsData, 8)
 
 // Change status at card
 const setFavorite = () => {

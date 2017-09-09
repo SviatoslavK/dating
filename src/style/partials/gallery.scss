@@ -69,6 +69,19 @@
 .gallery__block {
     display: flex;
     flex-wrap: wrap;
+    height: 725px;
+    @include respond-to(desktop) {
+        height: 646px;
+    }
+    @include respond-to(tablet) {
+        height: auto;
+    }
+    @include respond-to(mobile) {
+        height: auto;
+    }
+    @include respond-to(small) {
+        height: auto;
+    }
 }
 .gallery__card {
     width: 272px;
@@ -313,7 +326,7 @@
 .pagination__block {
     height: 43px;
     // width: auto;
-    width: 100px;
+    width: 200px;
     background-color: #fff;
     border-radius: 5px;
     margin-top: 47px;
@@ -326,14 +339,36 @@
         width: 100%;
     }
 }
+.pagination__pages {
+    display: flex;
+}
 .pagination__page {
     @include square(33px);
     line-height: 33px;
     text-align: center;
     border-radius: 5px;
+    margin-right: 5px;
+    &:last-child {
+        margin-right: 0;
+    }
     &:hover {
         cursor: pointer;
         background-color: #366CF7;
+    }
+}
+.pagination__arrow {
+    height: 13px;
+    display: inline-block;
+    width: 8px;
+    @include background-img('../img/arrow.png');
+}
+.pagination__page--right .pagination__arrow {
+    transform: rotate(180deg);
+}
+.pagination__page--right,
+.pagination__page--left {
+    &:hover {
+        background-color: transparent;
     }
 }
 .active__page {

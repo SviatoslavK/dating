@@ -1,6 +1,7 @@
 let personsData = [
     {
         name: 'Кристиночка',
+        sex: 'female',
         online: true,
         photos: 12,
         age: 28,
@@ -12,6 +13,7 @@ let personsData = [
     },
     {
         name: 'Диана',
+        sex: 'female',
         online: true,
         photos: 3,
         age: 20,
@@ -23,6 +25,7 @@ let personsData = [
     },
     {
         name: 'Аня',
+        sex: 'female',
         online: true,
         photos: 125,
         age: 18,
@@ -34,6 +37,7 @@ let personsData = [
     },
     {
         name: 'Анжелика',
+        sex: 'female',
         online: false,
         photos: 17,
         age: 27,
@@ -45,6 +49,7 @@ let personsData = [
     },
     {
         name: 'Лариса',
+        sex: 'female',
         online: true,
         photos: 12,
         age: 32,
@@ -56,6 +61,7 @@ let personsData = [
     },
     {
         name: 'Настя',
+        sex: 'female',
         online: true,
         photos: 3,
         age: 21,
@@ -67,6 +73,7 @@ let personsData = [
     },
     {
         name: 'Евгения',
+        sex: 'female',
         online: false,
         photos: 4,
         age: 30,
@@ -78,6 +85,7 @@ let personsData = [
     },
     {
         name: 'Ольга',
+        sex: 'female',
         online: true,
         photos: 28,
         age: 25,
@@ -89,6 +97,7 @@ let personsData = [
     },
     {
         name: 'Кристиночка',
+        sex: 'female',
         online: false,
         photos: 12,
         age: 28,
@@ -100,6 +109,91 @@ let personsData = [
     },
     {
         name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: 'img/lg-photo7.png'
+    },
+    {
+        name: 'Ангелина',
+        sex: 'female',
         online: false,
         photos: 20,
         age: 20,

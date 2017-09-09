@@ -1,31 +1,26 @@
 
 
-var toTopBtn = document.querySelector('#btn__to-top');
-toTopBtn.addEventListener('click', function () {
+let toTopBtn = document.querySelector('#btn__to-top');
+toTopBtn.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
 
-
-
-
-var allSection = Array.from(document.querySelectorAll('.choose__item'));
-allSection.map(function (item) {
-    item.addEventListener('click', function () {
+let allSection = Array.from(document.querySelectorAll('.choose__item'));
+allSection.map(item => {
+    item.addEventListener('click', () => {
         if (item.hasAttribute('checking')) {
-            item.removeAttribute('checking')
+            item.removeAttribute('checking');
+            appendCards(personsData, 8)
         } else {
             item.setAttribute('checking', 'true');
-            var rrr = allSection.filter(function(el) {
-                return el !== item
-            }).map(function(el) {
-                el.removeAttribute('checking')
-            })
+            allSection
+                .filter(el => el !== item)
+                .map(el => el.removeAttribute('checking'))
         }
     })
 })
 
 window.onload = setFavorite();
-window.onload = customPaginate(8);
 window.onload = rangeSlider();
 

@@ -45,11 +45,11 @@ const filterGirls = status => {
     if (status === 'new') {
         let week = 604800000;
         let lastWeek = Date.parse(new Date) - week
-        let lastRegistrated = girls.filter(item => Date.parse(item.registrationDate) > lastWeek)
+        let lastRegistrated = personsData.filter(item => Date.parse(item.registrationDate) > lastWeek)
         appendCards(lastRegistrated)
         customPaginate(8)
     } else {
-        appendCards(girls.filter(item => item[status]))
+        appendCards(personsData.filter(item => item[status]))
         customPaginate(8)
     }
 }
@@ -62,11 +62,35 @@ const search = () => {
     let fromAge = ranges[0].value
     let tillAge = ranges[1].value
 
-    let searchGirls = girls.filter(item => {
+    let searchGirls = personsData.filter(item => {
         return item.age >= fromAge && item.age <= tillAge && item.city.toLowerCase().includes(city)
     })
     appendCards(searchGirls)
     customPaginate(8)
 
 }
-appendCards(girls)
+appendCards(personsData)
+
+// Change status at card
+const setFavorite = () => {
+    let allCards = Array.from(document.querySelectorAll('.gallery__card'));
+    allCards.map(card => {
+        let favoriteText = card.querySelector('.button__favorite--text');
+        let favoriteBlock = card.querySelector('.card__button--favorite')
+        if (card.hasAttribute('favorite')) {
+            favoriteText.innerHTML = 'В избранных'
+        } else {
+            favoriteText.innerHTML = 'Избранное'
+        }
+
+        favoriteBlock.addEventListener('click', () => {
+            if (card.hasAttribute('favorite')) {
+                card.removeAttribute('favorite')
+                favoriteText.innerHTML = 'Избранное'
+            } else {
+                card.setAttribute('favorite', 'true')
+                favoriteText.innerHTML = 'В избранных'
+            }
+        })
+    })
+}

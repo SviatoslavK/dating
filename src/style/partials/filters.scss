@@ -280,6 +280,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 output {
     position: absolute;
     top: 15px;
+    transition:  none;
 }
 .first-range {
     left: 30px;

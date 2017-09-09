@@ -1,4 +1,4 @@
-let girls = [
+let personsData = [
     {
         name: 'Кристиночка',
         online: true,

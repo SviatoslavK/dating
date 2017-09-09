@@ -20,14 +20,29 @@ function getVals() {
     myValue2.innerHTML = myRange2.value;
 
     if (slide1 > slide2) {
-        let tmp = slide2; 
-        slide2 = slide1; 
+        let tmp = slide2;
+        slide2 = slide1;
         slide1 = tmp;
+        fillRange(slides[0], slides[1], slide1, slide2)
+    } else {
+        fillRange(slides[1], slides[0], slide1, slide2)
     }
+
     if (Math.abs(slide1 - slide2) <= 4)
         myValue.style.top = '-25px'
     else
         myValue.style.top = '15px'
+
+}
+
+const fillRange = (range1, range2, min, max) => {
+    let rangeID = range1.getAttribute('id')
+    let offsetLeft = (min - range1.min) * 100 / (range1.max - range1.min);
+    let fiilArea = (max - range1.min) * 100 / (range1.max - range1.min)
+    if (rangeID === 'first-range')
+        range2.style.background = `linear-gradient(to right, #F1EFEF 0%, #F1EFEF ${offsetLeft}%, #3366FF ${offsetLeft}%, #3366FF ${fiilArea}%, #F1EFEF ${fiilArea}%, #F1EFEF 100%)`
+    else
+        range1.style.background = `linear-gradient(to right, #F1EFEF 0%, #F1EFEF ${offsetLeft}%, #3366FF ${offsetLeft}%, #3366FF ${fiilArea}%, #F1EFEF ${fiilArea}%, #F1EFEF 100%)`
 }
 
 const rangeSlider = () => {

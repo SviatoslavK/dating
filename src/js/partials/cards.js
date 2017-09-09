@@ -6,7 +6,8 @@ const cardsHTML = data => {
             let temlate = document.createElement('template')
             temlate.innerHTML = `
         <div class="gallery__card" ${item.online ? 'online' : ''}>
-                <div class="gallery__card--img" style="background-image: url(${item.img})">
+                <div class="gallery__card--img">
+                <img src="${item.img}" class="card__avatar">
                     <div class="gallery__card--photos">
                         <div class="card__photos--icon"></div>
                         <div class="card__photos--quanity">${item.photos}</div>

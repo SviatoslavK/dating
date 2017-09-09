@@ -98,5 +98,16 @@ let personsData = [
         country: 'Россия',
         img: '../img/lg-photo2.png'
     },
+    {
+        name: 'Ангелина',
+        online: false,
+        photos: 20,
+        age: 20,
+        top: true,
+        registrationDate: '2015-03-09',
+        city: 'Воронеж',
+        country: 'Россия',
+        img: '../img/lg-photo7.png'
+    },
     
 ];

@@ -120,7 +120,8 @@ nav {
 }
 .header__status--icon {
     @include square(14px);
-    @include background-img('../img/info-icon.svg');
+    // @include background-img('../img/info-icon.svg');
+    @include retina-sprite($info-icon-group);
     margin-left: 8px;
     align-self: flex-start;
     margin-top: 6px;
@@ -172,7 +173,8 @@ nav {
 .header__arrow {
     width: 10px;
     height: 6px;
-    @include background-img('../img/arrow-down.png');
+    // @include background-img('../img/arrow-down.png');
+    @include sprite($arrow);
     &:hover {
         cursor: pointer;
     }

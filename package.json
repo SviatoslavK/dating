@@ -15,7 +15,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.9",
-    "gulp.spritesmith": "^6.2.1",
+    "gulp.spritesmith": "4.1.1",
     "rimraf": "^2.5.4"
   },
   "dependencies": {

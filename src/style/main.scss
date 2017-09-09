@@ -4,6 +4,8 @@
 * Custom
 */
 @import "partials/_utils.scss";
+@import "partials/sprites.scss";
+@include retina-sprites($retina-groups);
 @import "partials/header.scss";
 @import "partials/photos.scss";
 @import "partials/filters.scss";

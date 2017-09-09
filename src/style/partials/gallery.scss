@@ -182,7 +182,8 @@
 .card__photos--icon {
     width: 21px;
     height: 17px;
-    @include background-img('../img/camera-icon.svg');
+    // @include background-img('../img/camera-icon.svg');
+    @include retina-sprite($camera-icon-group);
     margin-right: 6px;
     @include respond-to(mobile) {
         width: 17px;

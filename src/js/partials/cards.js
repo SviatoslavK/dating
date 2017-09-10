@@ -71,6 +71,7 @@ const search = () => {
     appendCards(searchGirls, 8)
 
 }
+// fetched.then(() => appendCards(personsData, 8))
 appendCards(personsData, 8)
 
 // Change status at card

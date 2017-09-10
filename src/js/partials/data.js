@@ -1,8 +1,10 @@
-let fetched = fetch('https://raw.githubusercontent.com/SviatoslavK/dating/master/user.json')
-    .then(response => response.json())
-    .then(json => {
-        console.log('user: ', json);
-    })
+//  Fetch data from url
+// let personsData;
+// let fetched = fetch('https://raw.githubusercontent.com/SviatoslavK/dating/master/users.json')
+//     .then(response => response.json())
+//     .then(json => {
+//         personsData = json.personsData;
+//     })
 
 
 let personsData = [

@@ -1,10 +1,7 @@
 let fetched = fetch('https://raw.githubusercontent.com/SviatoslavK/dating/master/user.json')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (json) {
+    .then(response => response.json())
+    .then(json => {
         console.log('user: ', json);
-
     })
 
 

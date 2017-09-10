@@ -62,26 +62,26 @@
     }
 }
 .photos__item--1 {
-    @include background-img('../img/sm-photo1.png')
+    @include background-group('../img/sm-photo_1')
 }
 .photos__item--2 {
-    @include background-img('../img/sm-photo2.png')
+    @include background-group('../img/sm-photo_2')
 }
 .photos__item--3 {
-    @include background-img('../img/sm-photo3.png')
+    @include background-group('../img/sm-photo_3')
 }
 .photos__item--4 {
-    @include background-img('../img/sm-photo4.png')
+    @include background-group('../img/sm-photo_4')
 }
 .photos__item--5 {
-    @include background-img('../img/sm-photo5.png')
+    @include background-group('../img/sm-photo_5')
 }
 .photos__item--6 {
-    @include background-img('../img/sm-photo6.png')
+    @include background-group('../img/sm-photo_6')
 }
 .photos__item--7 {
-    @include background-img('../img/sm-photo7.png')
+    @include background-group('../img/sm-photo_7')
 }
 .photos__item--8 {
-    @include background-img('../img/sm-photo8.png')
+    @include background-group('../img/sm-photo_8')
 }

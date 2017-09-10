@@ -3,11 +3,13 @@ const cardsHTML = data => {
     data
         .sort((a, b) => Date.parse(b.registrationDate) - Date.parse(a.registrationDate))
         .map(item => {
-            let temlate = document.createElement('template')
+            let temlate = document.createElement('template');
+            let retina = window.devicePixelRatio > 1;
+            let rightImage = retina ? item.retinaImg : item.img;
             temlate.innerHTML = `
         <div class="gallery__card" ${item.online ? 'online' : ''}>
                 <div class="gallery__card--img">
-                <img src="${item.img}" class="card__avatar">
+                <img src="${rightImage}" class="card__avatar">
                     <div class="gallery__card--photos">
                         <div class="card__photos--icon"></div>
                         <div class="card__photos--quanity">${item.photos}</div>

@@ -25,6 +25,16 @@
     background-repeat: no-repeat;
     background-image: url($img);
 }
+@mixin background-group($img) {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url($img+'.png');
+    @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+        background-image: url($img+'@2x.png');
+    }
+}
 
 @mixin square($size) {
     max-height: $size;

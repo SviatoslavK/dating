@@ -120,8 +120,7 @@ nav {
 }
 .header__status--icon {
     @include square(14px);
-    // @include background-img('../img/info-icon.svg');
-    @include retina-sprite($info-icon-group);
+    @include background-img('../img/info-icon.svg');
     margin-left: 8px;
     align-self: flex-start;
     margin-top: 6px;
@@ -159,7 +158,7 @@ nav {
     margin-left: 18px;
     margin-right: 14px;
     @include square(43px);
-    @include background-img('../img/avatar.png');
+    @include background-group('../img/avatar');
     @include respond-to(tablet) {
         @include square(33px);
     }
@@ -173,8 +172,7 @@ nav {
 .header__arrow {
     width: 10px;
     height: 6px;
-    // @include background-img('../img/arrow-down.png');
-    @include sprite($arrow);
+    @include background-img('../img/arrow-down.png');
     &:hover {
         cursor: pointer;
     }

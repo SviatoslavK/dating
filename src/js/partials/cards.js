@@ -7,31 +7,31 @@ const cardsHTML = data => {
             let retina = window.devicePixelRatio > 1;
             let rightImage = retina ? item.retinaImg : item.img;
             temlate.innerHTML = `
-        <div class="gallery__card" ${item.online ? 'online' : ''}>
-                <div class="gallery__card--img">
-                <img src="${rightImage}" class="card__avatar">
-                    <div class="gallery__card--photos">
-                        <div class="card__photos--icon"></div>
-                        <div class="card__photos--quanity">${item.photos}</div>
+            <div class="gallery__card" ${item.online ? 'online' : ''}>
+                    <div class="gallery__card--img">
+                    <img src="${rightImage}" class="card__avatar">
+                        <div class="gallery__card--photos">
+                            <div class="card__photos--icon"></div>
+                            <div class="card__photos--quanity">${item.photos}</div>
+                        </div>
+                        ${item.top ? '<div class="gallery__card--top">топ</div>' : ''}
+                        <div class="gallery__card--buttons">
+                            <div class="card__button--item card__button--favorite">
+                                <div class="button__favorite--icon"></div>
+                                <div class="button__favorite--text">Избранное</div>
+                            </div>
+                            <div class="card__button--item card__button--write">
+                                <div class="button__write--icon"></div>
+                                <div class="button__write--text">Написать</div>
+                            </div>
+                        </div>
                     </div>
-                    ${item.top ? '<div class="gallery__card--top">топ</div>' : ''}
-                    <div class="gallery__card--buttons">
-                        <div class="card__button--item card__button--favorite">
-                            <div class="button__favorite--icon"></div>
-                            <div class="button__favorite--text">Избранное</div>
-                        </div>
-                        <div class="card__button--item card__button--write">
-                            <div class="button__write--icon"></div>
-                            <div class="button__write--text">Написать</div>
-                        </div>
+                    <div class="gallery__card--title">
+                        <div class="card__title--name">${item.name}, ${item.age} <span class="online"></span></div>
+                        <div class="card__title--location">${item.city}, ${item.country}</div>
                     </div>
                 </div>
-                <div class="gallery__card--title">
-                    <div class="card__title--name">${item.name}, ${item.age} <span class="online"></span></div>
-                    <div class="card__title--location">${item.city}, ${item.country}</div>
-                </div>
-            </div>
-        `
+            `
             fragment.appendChild(temlate.content)
         })
 

@@ -1,3 +1,13 @@
+let fetched = fetch('https://raw.githubusercontent.com/SviatoslavK/dating/master/user.json')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (json) {
+        console.log('user: ', json);
+
+    })
+
+
 let personsData = [
     {
         name: 'Кристиночка',
@@ -220,5 +230,5 @@ let personsData = [
         img: 'img/lg-photo_4.png',
         retinaImg: 'img/lg-photo_4@2x.png'
     },
-    
+
 ];
